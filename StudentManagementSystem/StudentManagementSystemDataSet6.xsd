@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StudentManagementSystemDataSet6" targetNamespace="http://tempuri.org/StudentManagementSystemDataSet6.xsd" xmlns:mstns="http://tempuri.org/StudentManagementSystemDataSet6.xsd" xmlns="http://tempuri.org/StudentManagementSystemDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StudentManagementSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StudentManagementSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StudentManagementSystem.Properties.Settings.GlobalReference.Default.StudentManagementSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EnrolRegisterTableAdapter" GeneratorDataComponentClassName="EnrolRegisterTableAdapter" Name="EnrolRegister" UserDataComponentName="EnrolRegisterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentManagementSystemConnectionString (Settings)" DbObjectName="StudentManagementSystem.dbo.EnrolRegister" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT edulevel FROM dbo.EnrolRegister</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="edulevel" DataSetColumn="edulevel" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StudentManagementSystemDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="StudentManagementSystemDataSet6" msprop:Generator_DataSetName="StudentManagementSystemDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EnrolRegister" msprop:Generator_RowEvHandlerName="EnrolRegisterRowChangeEventHandler" msprop:Generator_RowDeletedName="EnrolRegisterRowDeleted" msprop:Generator_RowDeletingName="EnrolRegisterRowDeleting" msprop:Generator_RowEvArgName="EnrolRegisterRowChangeEvent" msprop:Generator_TablePropName="EnrolRegister" msprop:Generator_RowChangedName="EnrolRegisterRowChanged" msprop:Generator_RowChangingName="EnrolRegisterRowChanging" msprop:Generator_TableClassName="EnrolRegisterDataTable" msprop:Generator_RowClassName="EnrolRegisterRow" msprop:Generator_TableVarName="tableEnrolRegister" msprop:Generator_UserTableName="EnrolRegister">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="edulevel" msprop:Generator_ColumnPropNameInRow="edulevel" msprop:Generator_ColumnPropNameInTable="edulevelColumn" msprop:Generator_ColumnVarNameInTable="columnedulevel" msprop:Generator_UserColumnName="edulevel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
